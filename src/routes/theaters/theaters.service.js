@@ -1,14 +1,6 @@
 const knex = require("../../db/connection")
 const reduceProperties = require("../../utils/reduce-properties");
 
-
-function list() {
-    // listed every single row in order to minimize ambiguity within the select function
-    
-}
-
-
-
 const reduceMovies = reduceProperties("theater_id",{
     m_movie_id:["movies", null, "movie_id"],
     m_title:["movies",null,"title"],
@@ -39,9 +31,7 @@ function listTheaters(){
         .select("mt.is_showing as mt_is_showing")
         .select("mt.theater_id as mt_theater_id")
         .then(reduceMovies)
-
 }
-
 
 module.exports = {
 list:listTheaters

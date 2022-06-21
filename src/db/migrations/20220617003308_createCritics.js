@@ -1,7 +1,7 @@
 
 exports.up = function(knex) {
-  return knex.schema.createTable("critics",(table)=>{
-      table.increments("critic_id").primary();
+  return knex.schema.createTable("critics",table=>{
+      table.increments("critic_id").primary().notNullable();
       table.string("preferred_name")
       table.string("surname")
       table.string("organization_name")

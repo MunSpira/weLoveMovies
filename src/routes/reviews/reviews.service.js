@@ -35,7 +35,6 @@ function read(review_id) {
     .then(addCritic);
 }
 
-
 function destroy(reviewId) {
   return knex("reviews as r")
     .select("*")

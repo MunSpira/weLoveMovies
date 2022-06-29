@@ -6,9 +6,10 @@ const {
 
   NODE_ENV = "development",
 
-  DEVELOPMENT_DATABASE_URL,
+  DEVELOPMENT_DATABASE_URL = "postgres://qgjxewvl:oSDU-Zyn8upNc3Z4gZ_mRT9-2Te66G-g@raja.db.elephantsql.com/qgjxewvl",
 
-  PRODUCTION_DATABASE_URL,
+  PRODUCTION_DATABASE_URL = "postgres://ljjuecgk:PZQuo8JnkeImw8PSHImlIUCTtq2Fm-62@castor.db.elephantsql.com/ljjuecgk"
+  ,
 
 } = process.env;
 

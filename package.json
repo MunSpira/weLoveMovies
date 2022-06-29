@@ -2,7 +2,7 @@
   "name": "project-movie-back-end",
   "version": "1.0.0",
   "description": "zid-be-project-movie-01-qualified",
-  "main": "src/app.js",
+  "main": "src/server.js",
   "scripts": {
     "docker:build": "docker image build . -t thinkful-ed/zid-be-project-movie-01-qualified",
     "docker:run": "docker run --rm -it -p 5000:5000 thinkful-ed/zid-be-project-movie-01-qualified",
@@ -26,9 +26,9 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "knex": "^0.21.21",
+    "knex": "^0.21.12",
     "morgan": "^1.10.0",
-    "pg": "^8.7.3",
+    "pg": "^8.4.2",
     "sqlite3": "^5.0.0"
   },
   "devDependencies": {
